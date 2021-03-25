@@ -11,7 +11,11 @@ VOID WINAPI DllThread(HINSTANCE hinstDLL) {
 		return FreeLibraryAndExitThread(hinstDLL, 0);
 	}
 
-	printf("Hello World!\n");
+	pIBaseClientDLL = CaptureInterface<IBaseClientDLL>("client.dll", "VClient018");
+	pIClientMode = **reinterpret_cast<IClientMode***>((*reinterpret_cast<uintptr_t**>(pIBaseClientDLL))[10] + 5);
+
+	hkIClientMode = std::make_unique<VmtHook>(pIClientMode);
+	hkIClientMode->Hook(hkCreateMove, 24);
 
 	while (!GetAsyncKeyState(VK_END)) {
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));

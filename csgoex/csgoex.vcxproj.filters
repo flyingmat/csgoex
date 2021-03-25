@@ -13,10 +13,37 @@
     <ClInclude Include="src\Utils\VmtHook.hpp">
       <Filter>Utils</Filter>
     </ClInclude>
+    <ClInclude Include="src\SDK\IBaseClientDLL.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDK\IClientMode.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDK\CUserCmd.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDK\Math\Vector.hpp">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDK\Math\QAngle.hpp">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooks\hkCreateMove.hpp">
+      <Filter>Hooks</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
       <UniqueIdentifier>{7f89dd3f-2a61-40a1-9f82-8659eafbbfc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{94fe2178-5820-4073-abc8-2e94d585ee1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{86aaf3e6-773a-4f82-a8bf-8e524307d94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Math">
+      <UniqueIdentifier>{755e5aeb-a82c-4d6e-a233-88f52aead863}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
