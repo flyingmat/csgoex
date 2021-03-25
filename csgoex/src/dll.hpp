@@ -1,3 +1,4 @@
 #pragma once
 
-#include "utils/CaptureInterface.hpp"
+#include "Utils/CaptureInterface.hpp"
+#include "Utils/VmtHook.hpp"

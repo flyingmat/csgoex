@@ -4,5 +4,8 @@
 
 #include <cstdint>
 #include <cstdio>
+#include <cstddef>
+#include <cstring>
 
+#include <memory>
 #include <thread>

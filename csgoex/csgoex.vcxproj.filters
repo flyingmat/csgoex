@@ -6,13 +6,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stdafx.h" />
-    <ClInclude Include="src\utils\CaptureInterface.hpp">
-      <Filter>utils</Filter>
+    <ClInclude Include="src\Utils\CaptureInterface.hpp">
+      <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="src\dll.hpp" />
+    <ClInclude Include="src\Utils\VmtHook.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="utils">
+    <Filter Include="Utils">
       <UniqueIdentifier>{7f89dd3f-2a61-40a1-9f82-8659eafbbfc7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
