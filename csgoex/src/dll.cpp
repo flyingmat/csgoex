@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "dll.hpp"
 
 VOID WINAPI DllThread(HINSTANCE hinstDLL) {
 	if (!AllocConsole())
@@ -11,6 +12,14 @@ VOID WINAPI DllThread(HINSTANCE hinstDLL) {
 	}
 
 	printf("Hello World!\n");
+
+	while (!GetAsyncKeyState(VK_END)) {
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+	}
+
+	FreeConsole();
+	fclose(stream);
+	FreeLibraryAndExitThread(hinstDLL, 0);
 }
 
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {

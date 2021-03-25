@@ -148,7 +148,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\dll.hpp" />
     <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\utils\CaptureInterface.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

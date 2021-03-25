@@ -1,4 +1,4 @@
 .vs
 build
-csgoex\Debug
-csgoex_loader\Debug
+csgoex/Debug
+csgoex_loader/Debug
