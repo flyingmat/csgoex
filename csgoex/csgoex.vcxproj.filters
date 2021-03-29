@@ -3,6 +3,27 @@
   <ItemGroup>
     <ClCompile Include="src\dll.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\backends\imgui_impl_win32.cpp">
+      <Filter>imgui\backends</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stdafx.h" />
@@ -31,6 +52,42 @@
     <ClInclude Include="src\Hooks\hkCreateMove.hpp">
       <Filter>Hooks</Filter>
     </ClInclude>
+    <ClInclude Include="openvr\openvr.h">
+      <Filter>openvr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDK\Math\matrix3x4_t.hpp">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\FindPattern.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooks\hkD3D9.hpp">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\backends\imgui_impl_dx9.h">
+      <Filter>imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\backends\imgui_impl_win32.h">
+      <Filter>imgui\backends</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -44,6 +101,15 @@
     </Filter>
     <Filter Include="SDK\Math">
       <UniqueIdentifier>{755e5aeb-a82c-4d6e-a233-88f52aead863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openvr">
+      <UniqueIdentifier>{6eef7479-64a4-4c47-949e-a907fcb186da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{459474d2-a93c-4eec-b550-dde9d7d3dd8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\backends">
+      <UniqueIdentifier>{20cb04d7-8dec-47fa-9d1c-ceed6cbba970}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
