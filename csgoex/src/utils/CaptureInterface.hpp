@@ -13,8 +13,6 @@ InterfaceReg* GetInterfaceList(const char* module_name) {
 
 	FARPROC pCaptureInterface = GetProcAddress(hModule, "CreateInterface");
 
-	CloseHandle(hModule);
-
 	if (!pCaptureInterface)
 		return nullptr;
 

@@ -182,8 +182,10 @@
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="openvr\openvr.h" />
     <ClInclude Include="src\dll.hpp" />
+    <ClInclude Include="src\Features\OpenVR.hpp" />
     <ClInclude Include="src\Hooks\hkCreateMove.hpp" />
     <ClInclude Include="src\Hooks\hkD3D9.hpp" />
+    <ClInclude Include="src\Menu\menu.hpp" />
     <ClInclude Include="src\SDK\CUserCmd.hpp" />
     <ClInclude Include="src\SDK\IBaseClientDLL.hpp" />
     <ClInclude Include="src\SDK\IClientMode.hpp" />

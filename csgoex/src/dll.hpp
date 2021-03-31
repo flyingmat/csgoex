@@ -15,13 +15,17 @@
 
 IBaseClientDLL* pIBaseClientDLL;
 IClientMode* pIClientMode;
-
-std::unique_ptr<VmtHook> hkIClientMode;
-
 IDirect3DDevice9* pIDirect3DDevice9;
-std::unique_ptr<VmtHook> hkIDirect3DDevice9;
+
+VmtHook* hkIClientMode;
+VmtHook* hkIDirect3DDevice9;
 
 vr::IVRSystem* vr_ptr;
+
+#include "Features/OpenVR.hpp"
+
+#include "Menu/menu.hpp"
+Menu* menu;
 
 #include "Hooks/hkD3D9.hpp"
 #include "Hooks/hkCreateMove.hpp"

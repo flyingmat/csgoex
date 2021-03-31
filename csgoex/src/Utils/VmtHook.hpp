@@ -4,23 +4,23 @@ class VmtHook {
 private:
 	uintptr_t** class_ptr = nullptr;
 	size_t function_amt = 0;
-	std::unique_ptr<uintptr_t[]> current_vmt = nullptr;
+	uintptr_t* current_vmt = nullptr;
 	uintptr_t* original_vmt = nullptr;
 public:
 	VmtHook(void) = default;
 
 	VmtHook(void* class_ptr) {
-		this->class_ptr = static_cast<std::uintptr_t**>(class_ptr);
+		this->class_ptr = static_cast<uintptr_t**>(class_ptr);
 
 		while (static_cast<std::uintptr_t*>(*this->class_ptr)[this->function_amt])
 			++this->function_amt;
 
 		this->original_vmt = *this->class_ptr;
-		this->current_vmt = std::make_unique<std::uintptr_t[]>(this->function_amt + 1);
+		this->current_vmt = new uintptr_t [this->function_amt + 1];
 
-		std::memcpy(this->current_vmt.get(), &this->original_vmt[-1], (this->function_amt + 1) * sizeof(std::uintptr_t));
+		std::memcpy(this->current_vmt, &this->original_vmt[-1], (this->function_amt + 1) * sizeof(std::uintptr_t));
 
-		*this->class_ptr = &this->current_vmt.get()[1];
+		*this->class_ptr = &this->current_vmt[1];
 	};
 
 	~VmtHook() {
