@@ -3,15 +3,19 @@
 #include "Utils/FindPattern.hpp"
 #include "Utils/CaptureInterface.hpp"
 #include "Utils/VmtHook.hpp"
+#include "Utils/GetVirtualFunction.hpp"
 
 #include "SDK/Math/Vector.hpp"
 #include "SDK/Math/QAngle.hpp"
 #include "SDK/Math/matrix3x4_t.hpp"
+#include "SDK/Math/VMatrix.hpp"
 
 #include "SDK/CUserCmd.hpp"
+#include "SDK/CViewSetup.hpp"
 
 #include "SDK/IBaseClientDLL.hpp"
 #include "SDK/IClientMode.hpp"
+#include "SDK/IVRenderView.hpp"
 
 IBaseClientDLL* pIBaseClientDLL;
 IClientMode* pIClientMode;

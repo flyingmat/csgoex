@@ -187,11 +187,13 @@
     <ClInclude Include="src\Hooks\hkD3D9.hpp" />
     <ClInclude Include="src\Menu\menu.hpp" />
     <ClInclude Include="src\SDK\CUserCmd.hpp" />
+    <ClInclude Include="src\SDK\CViewSetup.hpp" />
     <ClInclude Include="src\SDK\IBaseClientDLL.hpp" />
     <ClInclude Include="src\SDK\IClientMode.hpp" />
     <ClInclude Include="src\SDK\Math\matrix3x4_t.hpp" />
     <ClInclude Include="src\SDK\Math\QAngle.hpp" />
     <ClInclude Include="src\SDK\Math\Vector.hpp" />
+    <ClInclude Include="src\SDK\Math\VMatrix.hpp" />
     <ClInclude Include="src\stdafx.h" />
     <ClInclude Include="src\Utils\CaptureInterface.hpp" />
     <ClInclude Include="src\Utils\FindPattern.hpp" />

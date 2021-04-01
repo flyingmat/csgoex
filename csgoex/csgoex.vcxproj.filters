@@ -94,6 +94,12 @@
     <ClInclude Include="src\Features\OpenVR.hpp">
       <Filter>Features</Filter>
     </ClInclude>
+    <ClInclude Include="src\SDK\CViewSetup.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDK\Math\VMatrix.hpp">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
